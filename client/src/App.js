@@ -1,11 +1,18 @@
 import './App.css';
-import rengoku from './Rengoku.jpg'
+import Nav from './components/Nav';
+import About from './components/About';
+// Color pallete
+// https://colorhunt.co/palette/ffe6e6ff2626bd1616000000
 
 function App() {
   return (
     <div className="App">
-      <h1>Get Coding Loser!</h1>
-      <img style={{height: "300px"}} src={rengoku} alt="" />
+      <Nav/>
+      <main className="d-flex flex-column align-items-center">
+        <About/>
+        <hr />
+        <h1>Check</h1>
+      </main>
     </div>
   );
 }
