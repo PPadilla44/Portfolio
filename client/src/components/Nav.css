@@ -51,6 +51,12 @@
     cursor: pointer;
 }
 
+.nav-text:hover h5 {
+    color: #FFE6E6;
+    font-weight: 900;
+    font-style: italic;
+}
+
 .nav-text h5 {
     margin: 0;
 }
@@ -101,11 +107,13 @@ a {
 
 .contacts:hover {
     background-color: #BD1616;
-    color: #FFE6E6;
     box-shadow: 0px 0px 10px black;
     transition: 250ms;
 }
 
+.contacts:hover path {
+    color: #FFE6E6;
+}
 hr {
     margin-bottom: 0;
 } 

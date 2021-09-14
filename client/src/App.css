@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 .App {
@@ -13,6 +12,8 @@
 
 main {
   margin-left: 180px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blurBackground {
@@ -21,6 +22,8 @@ main {
   height: 100vh;
   width: 100vw;
   z-index: 3;
+  opacity: 0.50;
+  background-color: hsl(0, calc(var(--saturation-factor, 1) * 0%), 0%);
 }
 
 @media screen and (max-width: 1000px) {

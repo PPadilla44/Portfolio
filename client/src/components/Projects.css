@@ -1,0 +1,23 @@
+video::-webkit-media-controls {
+    display:none !important;
+    width: 100px;
+}
+
+
+.video {
+    height: 200px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.title {
+    background-color: #BD1616;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 800;
+}

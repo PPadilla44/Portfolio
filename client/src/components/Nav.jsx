@@ -105,8 +105,8 @@ const Nav = (props) => {
                     <hr />
                     {SidebarData.map((item, index) => {
                         return (
-                            <li key={index}>
-                                <Link to={item.link} className={item.cName} spy={true} smooth={true}>
+                            <li key={index} >
+                                <Link to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true}>
                                     <h5>{item.title}</h5>
                                 </Link>
                             </li>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 // Color pallete
 // https://colorhunt.co/palette/ffe6e6ff2626bd1616000000
@@ -13,11 +14,12 @@ function App() {
 
   return (
     <div className="App" name="top">
-      { blur && <div className={"blurBackground"} style={{ opacity: '0.85', background: 'hsl(0, calc(var(--saturation-factor, 1) * 0%), 0%)'}}/>}
+      { blur && <div className="blurBackground"/>}
       <Nav setBlur={setBlur}/>
-      <main className="d-flex flex-column align-items-cente">
+      <main>
         <About/>
         <Skills/>
+        <Projects/>
       </main>
     </div>
   );

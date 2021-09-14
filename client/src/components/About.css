@@ -22,6 +22,8 @@
 .text-content {
     display: flex;
     text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 90%;
     margin-top: 1rem;
 }
