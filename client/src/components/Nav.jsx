@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import './Nav.css'
 import { SidebarData } from './SidebarData';
+import { Link } from 'react-scroll';
 
 
 const Nav = (props) => {
@@ -15,6 +16,7 @@ const Nav = (props) => {
     });
 
     const [side, setSide] = useState(windowSize.width > 1000);
+    const [navBlur, setNavBlur] = useState(false);
 
     const showSidebar = () => {
         setSide(true);
@@ -40,6 +42,7 @@ const Nav = (props) => {
     }, [windowSize.width, setBlur]);
 
     const handleSidebar = () => {
+        console.log("Clicked");
         if (windowSize.width < 1000) {
             setSide(false);
             setBlur(false);
@@ -59,11 +62,21 @@ const Nav = (props) => {
 
         return () => document.removeEventListener('mousedown', handleClickOutside);
         // eslint-disable-next-line
-    }, [])
+    }, []);
+
+    const handleScroll = () => {
+        setNavBlur(!(window.scrollY === 0))
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll)
+    },[])
+
 
     return (
         <>
-            <div id="navbar" className="navbar">
+            <div id="navbar" className={navBlur ? 'navbar scroll' : 'navbar'} >
                 <button onClick={showSidebar} className="menu-bars" type="button">&#9776;</button>
             </div>
             <nav ref={wrapperRef} className={side ? 'nav-menu active' : 'nav-menu'}>
@@ -92,8 +105,10 @@ const Nav = (props) => {
                     <hr />
                     {SidebarData.map((item, index) => {
                         return (
-                            <li key={index} className={item.cName}>
-                                <h5>{item.title}</h5>
+                            <li key={index}>
+                                <Link to={item.link} className={item.cName} spy={true} smooth={true}>
+                                    <h5>{item.title}</h5>
+                                </Link>
                             </li>
                         );
                     })}
