@@ -21,16 +21,16 @@ main {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 3;
+  z-index: 11;
   opacity: 0.50;
   background-color: hsl(0, calc(var(--saturation-factor, 1) * 0%), 0%);
 }
+
 
 @media screen and (max-width: 1000px) {
   main {
     margin: 0;
   }
 }
-
 
 

@@ -9,7 +9,7 @@ export const ProjectsData = [
         description: [
             "Developed web application using Spring Boot framework for ease of dependency management.",
             "Integrated Google OAuth and Google Calendar API for personalized calendar access.",
-            "Created clickable calendar with JavaScript where admins can add events and customize availability."
+            "Created a clickable calendar with JavaScript where admins can add events and customize availability."
         ]
 
     },

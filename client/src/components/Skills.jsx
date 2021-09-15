@@ -7,8 +7,8 @@ const Skills = (props) => {
 
 
     return (
-        <section>
-            <h1 name="skills" className="title">Skills</h1>
+        <section name="skills">
+            <h1 className="title">Skills</h1>
             <div className="main">
                 { SkillsData.map((item, index) => {
                     return (

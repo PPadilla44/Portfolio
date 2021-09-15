@@ -13,6 +13,7 @@
 }
 
 .category {
+    overflow: hidden;
     width: 400px;
     height: 200px;
     margin: .5rem;

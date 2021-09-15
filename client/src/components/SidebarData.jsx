@@ -2,7 +2,7 @@ export const SidebarData = [
     {
         title: 'About Me',
         cName: 'nav-text',
-        link: 'top'
+        link: 'about'
     },
     {
         title: 'Skills',

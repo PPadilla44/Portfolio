@@ -38,11 +38,11 @@ const Nav = (props) => {
 
         handleResize();
 
-        return () => window.removeEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize);
+        
     }, [windowSize.width, setBlur]);
 
     const handleSidebar = () => {
-        console.log("Clicked");
         if (windowSize.width < 1000) {
             setSide(false);
             setBlur(false);
@@ -82,8 +82,10 @@ const Nav = (props) => {
             <nav ref={wrapperRef} className={side ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items' onClick={handleSidebar}>
                     <li className='navbar-toggle'>
-                        <h1>Pablo</h1>
-                        <h1 className="ms-3">Padilla</h1>
+                        <Link className="nav-titleName" to="about" onClick={handleSidebar} spy={true} smooth={true} offset={0}>
+                            <h1>Pablo</h1>
+                            <h1 className="ms-3">Padilla</h1>
+                        </Link>
                         <div className="navbar-contact">
                             <a href="https://github.com/PPadilla44" rel="noopener noreferrer" target="_blank">
                                 <svg className="contacts" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -106,7 +108,7 @@ const Nav = (props) => {
                     {SidebarData.map((item, index) => {
                         return (
                             <li key={index} >
-                                <Link to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true}>
+                                <Link activeClass="nav-active" to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true} offset={0}>
                                     <h5>{item.title}</h5>
                                 </Link>
                             </li>

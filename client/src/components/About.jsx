@@ -9,7 +9,7 @@ const About = (props) => {
 
 
     return (
-        <section className="section">
+        <section className="section" name="about">
             <div className="main">  
                 <div className="top-content">
                     <img src={me} alt="its a me" />

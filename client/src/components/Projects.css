@@ -12,6 +12,8 @@
     padding: 1rem;
     margin: .5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .gifWrapper h3 {
@@ -25,7 +27,7 @@
     font-weight: 600;
 }
 
-.main {
+.projects-main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -56,6 +58,71 @@
     bottom: 0;
     opacity: 0.75;
     background-color: rgb(116, 102, 102);  
+    transition: 400ms;
+}
+
+.project-blur.raise{
+    height: 400px;
+    opacity: .85;
+    background-color: black;
+    transition: 400ms;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 70px;
+    width: 500px;
+    border-radius: 0 0 10px 10px;
+    z-index: 3;
+    bottom: 0;
+    transition: 400ms;
+    overflow: hidden;
+    padding: .75rem;
+    list-style: none;
+}
+
+.project-desc.desc-hide p{
+    opacity: 0;
+    color: rgb(116, 102, 102);  
+    transition: 400ms;
+}
+
+.project-descItem {
+    margin: .25rem;
+    height: 100px;
+    border-radius: 15px;
+    padding: .25rem;
+    transition: 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-descItem.slidetext {
+    background-color: #FDD2BF;
+    border: 3px solid black;
+
+    transition: 400ms;
+}
+
+
+.project-descItem p {
+    color: black;
+    margin: 0;
+    font-weight: 900;
+    height: 55px;
+    padding: .2rem;
+    transition: 400ms;
+}
+
+.project-desc.desc-show {
+    color: white;
+    height: 385px;
+    display:flex;
+    z-index: 3;
+    transition: 400ms;
 }
 
 .project-btns {
@@ -105,22 +172,42 @@
     color: black;
     font-weight: 700;
     box-shadow: 0 0 15px 5px rgb(175, 172, 172);
-
     transition: 300ms;
 }
+
+
 
 @media screen and (max-width: 600px) {
 
     .gif{
         font-size: .85rem;
-        height: 300px;
-        width: 400px;
+        height: 250px;
+        width: 300px;
     }
     .gifWrapper h3 {
         font-size: 1.5rem;
     }
     .project-blur{
-        width: 400px;
+        width: 300px;
     }
+
+    .project-desc.desc-show {
+        height: 245px;
+    }
+    .project-blur.raise{
+        height: 250px;
+    }
+
+    .project-descItem {
+        margin: .2rem;
+        height: 55px;
+        width: 280px;
+        border-radius: 15px;
+        padding: .2rem;
+        font-size: .70rem;
+    }
+
+
+
 
 }
