@@ -11,15 +11,16 @@ const Projects = (props) => {
             <div className="main">
                 { ProjectsData.map((item, i) => {
                     return (
-                        <div key={i}>
+                        <div key={i} className="gifWrapper">
                             <h3>{item.title}</h3>
-                            <video 
-                                className="video"
-                                onMouseOver={(e) => e.target.play()} 
-                                onMouseOut={(e) => e.target.pause()} >
-                                <source src={item.src} type="video/mp4"/>
-                                Your browser does not support the video tag.
-                            </video>
+                            <img className="gif" src={item.src} alt={item.title}/>
+                            <div className="project-foot">
+                                <div className="project-blur"/>
+                                <div className="project-btns">
+                                    <button className="project-info">Info</button>
+                                    <a rel="noopener noreferrer" href={item.link} target="_blank" className="project-srcCode">Source</a>
+                                </div>
+                            </div>
                         </div>
                     )
                     }) }

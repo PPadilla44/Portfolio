@@ -1,7 +1,9 @@
 import React from "react";
 import me from '../assets/me-boxed.jpg';
-import './About.css'
-import Resume from "../assets/Pablo.Padilla.Resume.pdf"
+import './About.css';
+import Resume from "../assets/Pablo.Padilla.Resume.pdf";
+import { Link } from 'react-scroll';
+
 
 const About = (props) => {
 
@@ -17,11 +19,15 @@ const About = (props) => {
                             <h3>Full Stack Engineer</h3>
                         </div>
                         <div className="buttons">
-                            {/* Scroll to Cotacct */}
-                            <a href="/" className="option">Contact</a>
-                            {/* Scroll to Projects */}
-                            <a href="/" className="option">Projects</a>
-                            <a href={Resume} target='_blank' className="option" rel='noopener noreferrer'>Resume</a>
+                            <Link to="contact" className="option" spy={true} smooth={true}>
+                                    <h3>Contact</h3>
+                            </Link>
+                            <Link to="projects" className="option" spy={true} smooth={true}>
+                                    <h3>Projects</h3>
+                            </Link>
+                            <a href={Resume} target='_blank' className="option" rel='noopener noreferrer'>
+                                <h3>Resume</h3>
+                            </a>
                         </div>
                     </div>
                 </div>

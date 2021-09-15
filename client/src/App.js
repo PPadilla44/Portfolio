@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 
 // Color pallete
 // https://colorhunt.co/palette/ffe6e6ff2626bd1616000000
+// https://colorhunt.co/palette/fdd2bfff6b6bb61919012443
 
 function App() {
 

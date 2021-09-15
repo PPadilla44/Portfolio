@@ -55,6 +55,7 @@
     color: #FFE6E6;
     font-weight: 900;
     font-style: italic;
+    transition: 500ms;
 }
 
 .nav-text h5 {
@@ -103,6 +104,7 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: 400ms;
 }
 
 .contacts:hover {
@@ -113,7 +115,13 @@ a {
 
 .contacts:hover path {
     color: #FFE6E6;
+    transition: 250ms;
 }
+
+path {
+    transition: 400ms;
+}
+
 hr {
     margin-bottom: 0;
 } 

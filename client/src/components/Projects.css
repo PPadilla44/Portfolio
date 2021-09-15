@@ -1,11 +1,28 @@
-video::-webkit-media-controls {
-    display:none !important;
-    width: 100px;
+.gif {
+    height: 400px;
+    width: 500px;
+    background-color: #BD1616;
+    padding: 0 .5rem .5rem .5rem;
+    border-radius: 0 0 15px 10px;
+    margin: 0;
+    box-shadow: none;
 }
 
+.gifWrapper {
+    padding: 1rem;
+    margin: .5rem;
+    text-align: center;
+}
 
-.video {
-    height: 200px;
+.gifWrapper h3 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+    border-bottom: 1px solid wheat;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .main {
@@ -20,4 +37,90 @@ video::-webkit-media-controls {
     padding: 1rem 2rem;
     color: white;
     font-weight: 800;
+}
+
+.project-foot {
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+.project-blur {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 500px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+    bottom: 0;
+    opacity: 0.75;
+    background-color: rgb(116, 102, 102);  
+}
+
+.project-btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+}
+
+.project-info, .project-srcCode {
+    z-index: 3;
+    width: 8rem;
+    padding: .25rem;
+    margin: .50rem;
+    border: none;
+    box-shadow: 0 0 15px 2px rgb(175, 172, 172);
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: 300ms;
+    text-decoration: none;
+}
+.project-info {
+    background-color: #012443;
+    border: black 3px solid;
+    color: white;
+}
+
+.project-info:hover {
+    background-color: #043663;
+    width: 8.5rem;
+    color: wheat;
+    font-weight: 700;
+    box-shadow: 0 0 15px 5px rgb(175, 172, 172);
+
+    transition: 300ms;
+}
+
+.project-srcCode {
+    background-color: whitesmoke;
+    color: black;
+    border: #BD1616 3px solid;
+}
+
+.project-srcCode:hover {
+    background-color: #FFE6E6;
+    width: 8.5rem;
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 0 15px 5px rgb(175, 172, 172);
+
+    transition: 300ms;
+}
+
+@media screen and (max-width: 600px) {
+
+    .gif{
+        font-size: .85rem;
+        height: 300px;
+        width: 400px;
+    }
+    .gifWrapper h3 {
+        font-size: 1.5rem;
+    }
+    .project-blur{
+        width: 400px;
+    }
+
 }
