@@ -14,7 +14,7 @@ const Skills = (props) => {
                     return (
                         <div key={index} className="category">
                             <h3>{item.title}</h3>
-                            <div className="skillList">
+                            <div className="skillList" id={item.title}>
                                 {item.contents.map((a, i) => {
                                     return (
                                         <h2 className="skill" key={i}>
