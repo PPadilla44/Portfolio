@@ -1,9 +1,9 @@
 .gif {
     height: 400px;
     width: 500px;
-    background-color: #BD1616;
-    padding: 0 .5rem .5rem .5rem;
-    border-radius: 0 0 15px 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
     margin: 0;
     box-shadow: none;
 }
@@ -17,12 +17,13 @@
 }
 
 .gifWrapper h3 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 0;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     padding: 1rem;
-    border-bottom: 1px solid wheat;
+    border: 3px solid black;
+    border-bottom: none;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -42,7 +43,7 @@
 }
 
 .project-foot {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 20px 20px;
     position: relative;
     bottom: 70px;
 
@@ -53,17 +54,17 @@
     position: absolute;
     height: 70px;
     width: 500px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     z-index: 1;
     bottom: 0;
-    opacity: 0.75;
+    opacity: 0;
     background-color: rgb(116, 102, 102);  
     transition: 400ms;
 }
 
 .project-blur.raise{
     height: 400px;
-    opacity: .85;
+    opacity: .70;
     background-color: black;
     transition: 400ms;
 }
@@ -74,12 +75,12 @@
     position: absolute;
     height: 70px;
     width: 500px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     z-index: 3;
     bottom: 0;
     transition: 400ms;
     overflow: hidden;
-    padding: .75rem;
+    padding: .5rem;
     list-style: none;
 }
 
@@ -92,16 +93,14 @@
 .project-descItem {
     margin: .25rem;
     height: 100px;
-    border-radius: 15px;
     padding: .25rem;
     transition: 400ms;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .project-descItem.slidetext {
-    background-color: #FDD2BF;
+    background-color: white;
     border: 3px solid black;
 
     transition: 400ms;
@@ -138,7 +137,6 @@
     padding: .25rem;
     margin: .50rem;
     border: none;
-    box-shadow: 0 0 15px 2px rgb(175, 172, 172);
     font-weight: 600;
     font-size: 1.25rem;
     transition: 300ms;
@@ -152,26 +150,30 @@
 
 .project-info:hover {
     background-color: #043663;
-    width: 8.5rem;
-    color: wheat;
-    font-weight: 700;
-    box-shadow: 0 0 15px 5px rgb(175, 172, 172);
+    text-shadow: 2px 2px 5px  black;
 
     transition: 300ms;
 }
 
+.project-info:hover,.project-srcCode:hover {
+
+    box-shadow: 0 0 10px 0px rgb(175, 172, 172);
+    width: 8.5rem;
+
+    font-weight: 900;
+    transition: 500ms;
+}
+
 .project-srcCode {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     border: #BD1616 3px solid;
 }
 
 .project-srcCode:hover {
-    background-color: #FFE6E6;
-    width: 8.5rem;
+    text-shadow: 2px 2px 5px  gray;
+
     color: black;
-    font-weight: 700;
-    box-shadow: 0 0 15px 5px rgb(175, 172, 172);
     transition: 300ms;
 }
 
@@ -181,30 +183,39 @@
 
     .gif{
         font-size: .85rem;
-        height: 250px;
-        width: 300px;
+        height: 300px;
+        width: 325px;
     }
     .gifWrapper h3 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+    }
+
+    .gifWrapper {
+        padding: 0;
+    }
+
+    .project-desc {
+        width: 325px;
     }
     .project-blur{
-        width: 300px;
+        width: 325px;
     }
 
     .project-desc.desc-show {
-        height: 245px;
+        height: 275px;
+        width: 325px;
     }
     .project-blur.raise{
-        height: 250px;
+        height: 300px;
     }
 
     .project-descItem {
         margin: .2rem;
-        height: 55px;
-        width: 280px;
+        height: 65px;
+        width: 300px;
         border-radius: 15px;
         padding: .2rem;
-        font-size: .70rem;
+        font-size: .75rem;
     }
 
 

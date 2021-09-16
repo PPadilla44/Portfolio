@@ -11,13 +11,13 @@ export const SkillsData = [
                     "Flask", "Jinja2", "NodeJs"]
     },
     {
+        title: "TOOLS",
+        contents: ["Spring Tool Suite", "GitHub", "VS Code", "PostMan",
+                    "Amazon Web Services", "MySQL Workbench", "Mongoose",
+                    "Socket.io", "Ubuntu", "Gunicorn", "RegEx"]
+    },
+    {
         title: "DATABASES",
         contents: ["MySQL", "MongoDB"]
     },
-    {
-        title: "TOOLS",
-        contents: ["Spring Tool Suite", "GitHub", "VS Code", "PostMan",
-                    "Amazon Web Services (AWS)", "MySQL Workbench", "Mongoose",
-                    "Socket.io", "Ubuntu", "Gunicorn", "RegEx"]
-    }
 ]

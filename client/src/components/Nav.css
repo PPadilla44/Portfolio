@@ -10,12 +10,15 @@
 .nav-titleName {
     text-decoration: none;
     cursor: pointer;
+    text-shadow: 3px 3px 5px rgb(172, 171, 171);
+
 }
 
 .nav-active {
     background-color: #BD1616;
     color: #FFE6E6;
     box-shadow: 0px 0px 10px black;
+
 }
 
 .nav-active h5 {
@@ -23,6 +26,8 @@
     font-weight: 900;
     font-style: italic;
     padding-left: 15px;
+    text-shadow: 10px 5px 5px  black;
+
     transition: 500ms;
 }
 
@@ -79,6 +84,8 @@
     color: #FFE6E6;
     font-weight: 900;
     font-style: italic;
+    text-shadow: 0px 5px 5px  black;
+
     transition: 500ms;
 }
 

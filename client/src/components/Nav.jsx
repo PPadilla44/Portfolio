@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import './Nav.css'
-import { SidebarData } from './SidebarData';
+import { NavData } from './NavData';
 import { Link } from 'react-scroll';
 
 
@@ -105,11 +105,11 @@ const Nav = (props) => {
                         </div>
                     </li>
                     <hr />
-                    {SidebarData.map((item, index) => {
+                    {NavData.map((item, index) => {
                         return (
-                            <li key={index} >
+                            <li key={index}>
                                 <Link activeClass="nav-active" to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true} offset={0}>
-                                    <h5>{item.title}</h5>
+                                    <h5 style={{caretColor: "rgba(0,0,0,0)"}}>{item.title}</h5>
                                 </Link>
                             </li>
                         );

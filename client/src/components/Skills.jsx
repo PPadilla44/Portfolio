@@ -7,22 +7,22 @@ const Skills = (props) => {
 
 
     return (
-        <section name="skills">
+        <section name="skills" id="test">
             <h1 className="title">Skills</h1>
             <div className="main">
                 { SkillsData.map((item, index) => {
                     return (
                         <div key={index} className="category">
                             <h3>{item.title}</h3>
-                            <ul className="skillList">
+                            <div className="skillList">
                                 {item.contents.map((a, i) => {
                                     return (
-                                        <li className="skill" key={i}>
+                                        <h2 className="skill" key={i}>
                                             <span className="skill-name">{a}</span>
-                                            </li>
+                                            </h2>
                                     )
                                 })}
-                            </ul>
+                            </div>
                         </div>
                     )
                 })}

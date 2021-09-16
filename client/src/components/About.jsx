@@ -12,7 +12,7 @@ const About = (props) => {
         <section className="section" name="about">
             <div className="main">  
                 <div className="top-content">
-                    <img src={me} alt="its a me" />
+                    <img className="about-me" src={me} alt="its a me" />
                     <div className="contents">
                         <div className="fullstack">
                             <h1>Pablo Padilla</h1>

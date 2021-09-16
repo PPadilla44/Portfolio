@@ -1,4 +1,4 @@
-export const SidebarData = [
+export const NavData = [
     {
         title: 'About Me',
         cName: 'nav-text',
@@ -15,11 +15,11 @@ export const SidebarData = [
         cName: 'nav-text',
         link: 'projects'
     },
-    {
-        title: 'Experience',
-        cName: 'nav-text',
-        link: 'experience'
-    },
+    // {
+    //     title: 'Experience',
+    //     cName: 'nav-text',
+    //     link: 'experience'
+    // },
     {
         title: 'Education',
         cName: 'nav-text',

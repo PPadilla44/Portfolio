@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Education from './components/Education';
 
 // Color pallete
 // https://colorhunt.co/palette/ffe6e6ff2626bd1616000000
@@ -21,6 +22,7 @@ function App() {
         <About/>
         <Skills/>
         <Projects/>
+        <Education/>
       </main>
     </div>
   );
