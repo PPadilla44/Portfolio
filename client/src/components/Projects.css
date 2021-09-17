@@ -1,7 +1,9 @@
 .gif {
-    height: 400px;
-    width: 500px;
-    border: 3px solid black;
+    /* height: 400px;
+    width: 500px; */
+    height: 350px;
+    width: 450px;
+    border: 1px solid black;
     border-top: none;
     border-radius: 0 0 20px 20px;
     margin: 0;
@@ -22,10 +24,12 @@
     margin: 0;
     border-radius: 20px 20px 0 0;
     padding: 1rem;
-    border: 3px solid black;
+    border: 1px solid black;
     border-bottom: none;
     font-size: 2rem;
     font-weight: 600;
+    text-shadow: 5px 5px 10px gray;
+
 }
 
 .projects-main {
@@ -33,6 +37,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 .title {
@@ -53,7 +58,7 @@
     display: flex;
     position: absolute;
     height: 70px;
-    width: 500px;
+    width: 450px;
     border-radius: 0 0 20px 20px;
     z-index: 1;
     bottom: 0;
@@ -63,7 +68,7 @@
 }
 
 .project-blur.raise{
-    height: 400px;
+    height: 350px;
     opacity: .70;
     background-color: black;
     transition: 400ms;
@@ -74,7 +79,7 @@
     flex-direction: column;
     position: absolute;
     height: 70px;
-    width: 500px;
+    width: 450px;
     border-radius: 0 0 20px 20px;
     z-index: 3;
     bottom: 0;
@@ -92,7 +97,7 @@
 
 .project-descItem {
     margin: .25rem;
-    height: 100px;
+    height: 90px;
     padding: .25rem;
     transition: 400ms;
     display: flex;
@@ -118,7 +123,7 @@
 
 .project-desc.desc-show {
     color: white;
-    height: 385px;
+    height: 345px;
     display:flex;
     z-index: 3;
     transition: 400ms;
@@ -215,7 +220,7 @@
         width: 300px;
         border-radius: 15px;
         padding: .2rem;
-        font-size: .75rem;
+        font-size: .55rem;
     }
 
 

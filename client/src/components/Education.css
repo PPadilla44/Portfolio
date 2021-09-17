@@ -19,7 +19,19 @@
     border-radius: 20px 0 0 20px;
     border: 1px solid black;
     border-right: none;
+    z-index: 3;
+    transition: 300ms;
 }
+
+.ed-img:hover {
+    box-shadow: -7px 0px 10px -5px #088fc0;
+    transition: 300ms;
+}
+
+#skyline:hover{
+    box-shadow: -7px 0px 10px -5px #e0a613;
+}
+
 .ed-contents p, .ed-contents h3, .ed-contents h1{ 
     margin: 0;
 }
@@ -43,6 +55,7 @@
     margin-bottom: .25rem;
     cursor: pointer;
     transition: 400ms;
+
 }
 
 .ed-desc {
@@ -56,13 +69,12 @@
 
 .skyline:hover {
     color: #FCBA18;
-
-    transition: 500ms;
+    transition: 200ms;
 }
 
 .dojo:hover {
     color: #08A9E2;    
-    transition: 500ms;
+    transition: 200ms;
 
 }
 

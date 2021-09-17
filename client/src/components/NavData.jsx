@@ -29,5 +29,10 @@ export const NavData = [
         title: 'Contact',
         cName: 'nav-text',
         link: 'contact'
-    }
+    },
+    {
+        title: 'Resume',
+        cName: 'nav-text',
+        link: 'contact'
+    },
 ];

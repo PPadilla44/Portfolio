@@ -5,6 +5,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 // Color pallete
 // https://colorhunt.co/palette/ffe6e6ff2626bd1616000000
@@ -23,6 +25,8 @@ function App() {
         <Skills/>
         <Projects/>
         <Education/>
+        <Contact/>
+        <Footer/>
       </main>
     </div>
   );

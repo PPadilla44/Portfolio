@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import './Nav.css'
 import { NavData } from './NavData';
 import { Link } from 'react-scroll';
+import Resume from "../assets/Pablo.Padilla.Resume.pdf";
+
 
 
 const Nav = (props) => {
@@ -108,9 +110,18 @@ const Nav = (props) => {
                     {NavData.map((item, index) => {
                         return (
                             <li key={index}>
-                                <Link activeClass="nav-active" to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true} offset={0}>
-                                    <h5 style={{caretColor: "rgba(0,0,0,0)"}}>{item.title}</h5>
-                                </Link>
+                                {
+                                    item.title === "Resume" 
+                                    ?
+                                    <a href={Resume} onClick={handleSidebar} className={item.cName} target='_blank' rel='noopener noreferrer'>
+                                        <h5 style={{caretColor: "rgba(0,0,0,0)"}}>{item.title}</h5>
+                                    </a>
+                                    :
+                                    <Link activeClass="nav-active" to={item.link} onClick={handleSidebar} className={item.cName} spy={true} smooth={true} offset={0}>
+                                        <h5 style={{caretColor: "rgba(0,0,0,0)"}}>{item.title}</h5>
+                                    </Link>
+                                }
+
                             </li>
                         );
                     })}

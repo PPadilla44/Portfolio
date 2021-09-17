@@ -14,7 +14,7 @@ const Education = (props) => {
                         return(
                             <div key={i} className="ed-data">
                                 <a rel="noopener noreferrer" href={item.link} target="_blank" className="ed-imgLink" >
-                                    <img src={item.image} alt={item.name} className="ed-img" />
+                                    <img src={item.image} alt={item.name} id={item.classN} className="ed-img" />
                                 </a>
                                 <div className="ed-contents">
                                     <a  rel="noopener noreferrer" href={item.link} target="_blank">
@@ -25,7 +25,7 @@ const Education = (props) => {
                                         {
                                             item.description.map((d, j) => {
                                                 return (
-                                                    <h3>{d}</h3>
+                                                    <h3 key={j}>{d}</h3>
                                                 )
                                             })
                                         }
